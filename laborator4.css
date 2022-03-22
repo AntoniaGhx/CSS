@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
+
+.bg-img {
+    min-height: 550px;
+    overflow: hidden;
+    position: relative;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    color: white;
+    overflow: hidden;
+    background-color: #333;
+    opacity: 80%;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+display: block;
+color: white;
+text-align: center;
+padding: 20px 16px;
+text-decoration: none; 
+}
+
+li.right{
+    font-family: 'Brush Script MT', cursive;
+    color: white;
+    display: block;
+    width: 200px;
+    font-size: 30px;
+    -webkit-text-stroke-width: thick;
+}
+
+li.nav-button{
+    width: 100px;
+}
+
+li.nav-title{
+    padding-top: 10px;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn-area{
+    cursor: pointer;
+    color: blanchedalmond;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 2px;
+    background-color: black;
+}
+
+.container{
+    height: 250px;
+}
+
+.imagebox { 
+    padding: 0px 30px 0px 30px;
+    height: 250px;
+    width: 75%;
+    float: left;
+    background: black;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    resize: vertical;
+    height: 250px;
+    width: 25%;
+    background-color: rgb(8, 8, 8);
+    border-left: 1px solid white;
+}
+
+.text{
+    width: 70%;
+    font-family: Garamond, serif;
+    color: white;
+    letter-spacing: 3px;
+    margin-left: 30px;
+}
+
+.news-container{
+    background: whitesmoke;
+    padding: 20px;
+    overflow: hidden;
+    display: block;
+}
+
+.news-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.news{
+    float: left;
+    width: 50%;
+    border-right: 1px solid black;
+    padding: 0px 20px 0px 0px;
+    background: whitesmoke;
+}
+
+.clients{
+    float: left;
+    width: 50%;
+    border-right: 1px solid whitesmoke;
+    background: whitesmoke;
+    padding: 0px 20px 20px 20px;
+}
+
+.news-pics{
+    padding: 40px
+}
+
+.news ul {
+    list-style-type: none;
+    margin-top: 0;
+}
+.news ul h2 {
+    list-style-type: none;
+    margin-top: 0;
+}
+.news ul li{
+    list-style-type: none;
+}
+.news li{
+    display: flex;
+    background-position: center;
+}
+.news li:first-child h4 {
+    margin-top: 0;
+}
+
+.clients h3{
+    margin-top: 0;
+}
+h3{
+    color:rgb(39, 214, 214);
+}
+h4{
+    color: rgb(189, 182, 182);
+}
+h2{
+    word-spacing: 17em;
+}
+
+
+@media (min-width:425px) and (max-width:768px){
+    .container{
+        display: block;
+        height: auto;
+    }
+    .imagebox{
+        float: none;
+        width: 100%;
+    }
+    .textbox{
+        width: 100%;
+        text-align: center;
+        height: 100px;
+    }
+    .text{
+        text-align: center;
+        width: 90%;
+    }
+    .news-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .news{
+        width: 100%;
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+    .clients{
+        width: 100%;
+        padding-top: 20px;
+    }
+}
+
+@media (min-width:319px) and (max-width:424px){
+    a{
+        padding: 0;
+    }
+    .topnav li{
+        width: 60px;
+    }
+    .topnav li.right{
+        width: 200px;
+    }
+    .topnav li.nav-button{
+        width: 100px;
+    }
+    .container{
+        display: block;
+        height: auto;
+    }
+    .imagebox{
+        display: none;
+    }
+    .textbox{
+        width: 100%;
+        text-align: center;
+        height: 150px;
+    }
+    .text{
+        text-align: center;
+        width: 90%;
+    }
+    .news-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .news{
+        width: 100%;
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+    .clients{
+        width: 100%;
+        padding-top: 20px;
+    }
+    .news-pics{
+        padding: 5px;
+    }
+}
